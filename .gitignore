@@ -1,0 +1,6 @@
+.idea
+node_modules
+.vscode
+npm-*.log
+yarn*.log
+
