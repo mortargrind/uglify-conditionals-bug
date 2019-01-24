@@ -1,0 +1,17 @@
+{
+  "name": "uglify-conditionals-bug",
+  "version": "1.0.0",
+  "description": "UglifyJS Conditionals Bug",
+  "main": "src/index.js",
+  "scripts": {
+    "uglify": "uglifyjs -o ./dist/objectAssignment.min.js --compress conditionals=true ./src/specs/objectAssignment.js",
+    "test": "node src/test.js",
+    "start:cons-disabled": "npm run uglify -- -c conditionals=false && npm run test",
+    "start": "npm run uglify && npm run test"
+  },
+  "author": "Semih Basmaci <semih.basmaci@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "uglify-js": "3.4.9"
+  }
+}
